@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer-container">
         <div class="footer-body">
             <h2 class="footer-label">Курс читает Людмила Альбертини</h2>
@@ -15,26 +15,26 @@
                 </div>
             </div>
             <div class="footer__contacts">
-                <div class="conatact-group">
+                <a class="conatact-group">
                     <img src="../icons/youtube-ico.svg" alt="">
                     <p>YouTube</p>
-                </div>
-                <div class="conatact-group">
+                </a>
+                <a class="conatact-group">
                     <img src="../icons/instagram-ico.svg" alt="">
                     <p>Instagram</p>
-                </div>
-                <div class="conatact-group">
+                </a>
+                <a class="conatact-group">
                     <img src="../icons/facebook-ico.svg" alt="">
                     <p>Facebook</p>
-                </div>
-                <div class="conatact-group">
+                </a>
+                <a class="conatact-group">
                     <img src="../icons/vkontakte-ico.svg" alt="">
                     <p>VKontakte</p>
-                </div>
-                <div class="conatact-group">
+                </a>
+                <a href="tel:+41214645522" class="conatact-group">
                     <img src="../icons/phone-ico.svg" alt="">
                     <p>+41 21 464 55 22</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>

@@ -938,6 +938,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 .footer .footer-container .footer__contacts .conatact-group p {
   font-family: Inter;

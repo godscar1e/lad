@@ -7,22 +7,22 @@
             <div class="headerbody__navigation headernav">
                 <ul class="headernav__list navlist">
                     <li class="navlist__item">
-                        <a href="">Вопросы</a>
+                        <a href="#questionblock">Вопросы</a>
                     </li>
                     <li class="navlist__item">
-                        <a href="">Отзывы</a>
+                        <a href="#feedbacksblock">Отзывы</a>
                     </li>
                     <li class="navlist__item">
-                        <a href="">Тарифы</a>
+                        <a href="#rateblock">Тарифы</a>
                     </li>
                     <li class="navlist__item">
-                        <a href="">Доп. Услуги</a>
+                        <a href="#additservice">Доп. Услуги</a>
                     </li>
                     <li class="navlist__item">
-                        <a href="">Поездки</a>
+                        <a href="#trips">Поездки</a>
                     </li>
                     <li class="navlist__item">
-                        <a href="">
+                        <a href="#footer">
                             Контакты
                         </a>
                     </li>

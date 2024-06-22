@@ -143,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__questionblock questionblock">
+        <div class="main__questionblock questionblock" id="questionblock">
             <h2 class="questionblock__label">
                 ВОПРОСЫ
             </h2>
@@ -207,7 +207,7 @@
             </div>
 
         </div>
-        <div class="main__feedbacksblock feedbacksblock">
+        <div class="main__feedbacksblock feedbacksblock" id="feedbacksblock">
             <h2 class="feedbacksblock__label">
                 ОТЗЫВЫ
                 О КУРСЕ
@@ -233,7 +233,7 @@
             </div>
             <div class="swiper-button-next"></div>
         </div>
-        <div class="main__rateblock rateblock">
+        <div class="main__rateblock rateblock" id="rateblock">
             <h2 class="rateblock__label">ТАРИФЫ</h2>
             <div class="rateblock__rates">
                 <div class="rates__rate rate">
@@ -288,7 +288,7 @@
                 </button>
             </div>
         </div>
-        <div class="main__additservice additservice">
+        <div class="main__additservice additservice" id="additservice">
             <h2 class="additservice__label">ДОП. УСЛУГИ</h2>
             <div class="additservice__services services">
                 <div class="services__service service">
@@ -345,7 +345,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__trips trips">
+        <div class="main__trips trips" id="trips">
             <h2 class="trips__label">ПОЕЗДКИ</h2>
 
             <div class="trips__body tripbody">
