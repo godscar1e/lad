@@ -185,7 +185,7 @@ body {
 }
 .main__container .main-bg {
   width: calc(100% + 50px);
-  margin: 0 -10px;
+  margin: 0 -20px;
   max-height: clamp(200px, 48.542vw, 932px);
   background-attachment: fixed;
   background-size: cover;
@@ -892,6 +892,14 @@ body {
   background-size: cover;
   background-position: center;
 }
+.footer .footer-container {
+  padding: 0 20px;
+}
+.footer .footer-container .footer-body {
+  max-width: 1022px;
+  width: 100%;
+  margin: 75px auto;
+}
 .footer .footer-container .footer-body .footer-label {
   font-family: Inter;
   font-size: 36px;
@@ -899,10 +907,42 @@ body {
   line-height: 43.57px;
   text-align: center;
 }
+.footer .footer-container .footer-body .footer-mainblock {
+  max-width: 922px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.footer .footer-container .footer-body .footer-mainblock .mainblock-list-cont {
+  max-width: 633px;
+  padding-top: 33px;
+}
+.footer .footer-container .footer-body .footer-mainblock .mainblock-list-cont .footer-list {
+  margin-left: 30px;
+}
 .footer .footer-container .footer-body .footer-mainblock .mainblock-list-cont .footer-list .footer__list-item {
   font-family: Inter;
   font-size: 24px;
   font-weight: 400;
   line-height: 29.05px;
+  text-align: left;
+  list-style: disc;
+}
+.footer .footer-container .footer__contacts {
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .footer__contacts .conatact-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .footer-container .footer__contacts .conatact-group p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
   text-align: left;
 }
