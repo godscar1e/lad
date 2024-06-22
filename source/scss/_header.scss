@@ -1,0 +1,54 @@
+.header {
+    &__container {
+        padding: 0 20px;
+
+        .headerbody {
+            max-width: 1320px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            &__logo {}
+
+            .headernav {
+                max-width: 1140px;
+                width: 100%;
+                margin: auto 0;
+
+                .navlist {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &__item {
+                        font-size: 24px;
+
+                        a {
+                            position: relative;
+                            display: inline-block;
+                            transition: color 0.3s, text-decoration 0.3s;
+                            color: $mainBlue;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 1px;
+                                bottom: -4px;
+                                left: 0;
+                                background-color: $mainBlue;
+                                z-index: -1;
+                                transform: scaleX(0);
+                                transition: all 0.3s ease-in-out 0s;
+                            }
+
+                            &:hover:before {
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
