@@ -1,0 +1,98 @@
+@import "starter";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    @import "header";
+
+    .main {
+        &__container {
+            padding: 0 20px;
+
+            .profilebody {
+                .profilenav {
+                    max-width: 402px;
+                    width: 100%;
+
+                    &__list {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 365px;
+
+                        h3 {
+                            font-size: 32px;
+                            font-weight: 400;
+                            line-height: 36.36px;
+                            text-align: left;
+
+                        }
+
+                        .profile__list-item {
+                            position: relative;
+                            display: flex;
+                            // justify-content: space-between;
+                            // gap: 34px;
+                            cursor: pointer;
+                            transition: max-width 0.5s ease, width 0.5s ease, height 0.5s ease, padding 0.3s ease, border-radius 0.5s ease, border 0.5s ease;
+
+                            &:hover {
+                                max-width: 402px;
+                                width: 100%;
+                                height: 77px;
+                                padding: 25px 30px;
+                                border-radius: 15px;
+                                border: 1px solid $mainBlue;
+                            }
+
+                            &:nth-of-type(4):hover {
+                                height: 104px;
+                            }
+
+                            p {
+                                position: relative;
+                                font-size: 24px;
+                                padding-left: 34px;
+                                font-weight: 400;
+                                line-height: 27.27px;
+                                text-align: left;
+                                color: #000000;
+
+                            }
+
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 27px;
+                                height: 27px;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+
+                            &:nth-of-type(1)::before {
+                                background-image: url('../icons/profile/profile-ico.svg');
+                            }
+
+                            &:nth-of-type(2)::before {
+                                background-image: url('../icons/profile/notifications-ico.svg');
+                            }
+
+                            &:nth-of-type(3)::before {
+                                background-image: url('../icons/profile/chat.svg');
+                            }
+
+                            &:nth-of-type(4)::before {
+                                text-align: center;
+                                transform: translateX(24%);
+                                background-image: url('../icons/profile/lightbulb-ico.svg');
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

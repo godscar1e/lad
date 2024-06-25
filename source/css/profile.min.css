@@ -1,0 +1,242 @@
+@import "https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap";
+@import "https://fonts.googleapis.com/css?family=Georgia:100,200,300,regular,500,600,700,800,900&display=swap";
+* {
+  font-family: "Georgia";
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+  box-sizing: border-box;
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  line-height: normal;
+  position: relative;
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia";
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia";
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  color: #16354D;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1390px) {
+  .service {
+    max-width: 930px !important;
+  }
+  .service__preview {
+    justify-content: space-around !important;
+  }
+  .service__contact-price-block {
+    justify-content: space-around !important;
+  }
+}
+@media (max-width: 768px) {
+  .forwgridtable {
+    grid-template-columns: 1fr !important;
+    gap: 1.875rem !important;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper .header__container {
+  padding: 0 20px;
+}
+.wrapper .header__container .headerbody {
+  max-width: 1320px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+.wrapper .header__container .headerbody .headernav {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto 0;
+}
+.wrapper .header__container .headerbody .headernav .navlist {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .header__container .headerbody .headernav .navlist__item {
+  font-size: 24px;
+}
+.wrapper .header__container .headerbody .headernav .navlist__item a {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
+  color: #16354D;
+}
+.wrapper .header__container .headerbody .headernav .navlist__item a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: #16354D;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.wrapper .header__container .headerbody .headernav .navlist__item a:hover:before {
+  transform: scaleX(1);
+}
+.wrapper .main__container {
+  padding: 0 20px;
+}
+.wrapper .main__container .profilebody .profilenav {
+  max-width: 402px;
+  width: 100%;
+}
+.wrapper .main__container .profilebody .profilenav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 365px;
+}
+.wrapper .main__container .profilebody .profilenav__list h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.36px;
+  text-align: left;
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  transition: max-width 0.5s ease, width 0.5s ease, height 0.5s ease, padding 0.3s ease, border-radius 0.5s ease, border 0.5s ease;
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item:hover {
+  max-width: 402px;
+  width: 100%;
+  height: 77px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  border: 1px solid #16354D;
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item:nth-of-type(4):hover {
+  height: 104px;
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item p {
+  position: relative;
+  font-size: 24px;
+  padding-left: 34px;
+  font-weight: 400;
+  line-height: 27.27px;
+  text-align: left;
+  color: #000000;
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item:nth-of-type(1)::before {
+  background-image: url("../icons/profile/profile-ico.svg");
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item:nth-of-type(2)::before {
+  background-image: url("../icons/profile/notifications-ico.svg");
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item:nth-of-type(3)::before {
+  background-image: url("../icons/profile/chat.svg");
+}
+.wrapper .main__container .profilebody .profilenav__list .profile__list-item:nth-of-type(4)::before {
+  text-align: center;
+  transform: translateX(24%);
+  background-image: url("../icons/profile/lightbulb-ico.svg");
+}
